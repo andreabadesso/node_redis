@@ -979,7 +979,7 @@ commands = set_union(["get", "set", "setnx", "setex", "append", "strlen", "del",
     "randomkey", "select", "move", "rename", "renamenx", "expire", "expireat", "keys", "dbsize", "auth", "ping", "echo", "save", "bgsave",
     "bgrewriteaof", "shutdown", "lastsave", "type", "multi", "exec", "discard", "sync", "flushdb", "flushall", "sort", "info", "monitor", "ttl",
     "persist", "slaveof", "debug", "config", "subscribe", "unsubscribe", "psubscribe", "punsubscribe", "publish", "watch", "unwatch", "cluster",
-    "restore", "migrate", "dump", "object", "client", "eval", "evalsha"], require("./lib/commands"));
+    "restore", "migrate", "dump", "object", "client", "eval", "evalsha", "geoadd", "georadius", "georadiusbymember", "geoencode", "geodecode"], require("./lib/commands"));
 
 commands.forEach(function (fullCommand) {
     var command = fullCommand.split(' ')[0];
